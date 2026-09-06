@@ -6,7 +6,8 @@ const Home = () => {
   const tabData = [
     { id: 1, value: "Counter" },
     { id: 2, value: "Todo" },
-    { id: 3, value: "Tab 3" },
+    { id: 3, value: "Fetch" },
+    { id: 4, value: "Search" },
   ];
   return (
     <>
