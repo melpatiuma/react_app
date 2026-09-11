@@ -1,6 +1,9 @@
 import React from "react";
 import Counter from "../counter/Counter";
 import Todo from "../todo/Todo";
+import Fetch from "../fetch/Fetch";
+import Search from "../search/Search";
+import Debouncing from "../debouncing/Debouncing";
 
 const Tab = ({ tabData, activeTab, setActiveTab }) => {
   const TabData = () => {
@@ -9,8 +12,12 @@ const Tab = ({ tabData, activeTab, setActiveTab }) => {
         return <Counter />;
       case "Todo":
         return <Todo />;
-      case "Tab 3":
-        return <div>Tab 3</div>;
+      case "Fetch":
+        return <Fetch />;
+      case "Search":
+        return <Search />;
+      case "Debouncing":
+        return <Debouncing />;
       default:
         return null;
     }
