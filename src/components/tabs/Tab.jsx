@@ -3,6 +3,7 @@ import Counter from "../counter/Counter";
 import Todo from "../todo/Todo";
 import Fetch from "../fetch/Fetch";
 import Search from "../search/Search";
+import Debouncing from "../debouncing/Debouncing";
 
 const Tab = ({ tabData, activeTab, setActiveTab }) => {
   const TabData = () => {
@@ -15,6 +16,8 @@ const Tab = ({ tabData, activeTab, setActiveTab }) => {
         return <Fetch />;
       case "Search":
         return <Search />;
+      case "Debouncing":
+        return <Debouncing />;
       default:
         return null;
     }

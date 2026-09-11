@@ -1,14 +1,12 @@
-import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
 import Home from "./components/home/Home";
 
 function App() {
   return (
     <>
-      <Home />
+      <myContext.Provider value={{ store, setStore }}>
+        <Home />
+      </myContext.Provider>
     </>
   );
 }

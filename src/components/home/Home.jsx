@@ -8,6 +8,7 @@ const Home = () => {
     { id: 2, value: "Todo" },
     { id: 3, value: "Fetch" },
     { id: 4, value: "Search" },
+    { id: 5, value: "Debouncing" },
   ];
   return (
     <>
