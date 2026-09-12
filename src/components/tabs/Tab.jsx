@@ -4,6 +4,7 @@ import Todo from "../todo/Todo";
 import Fetch from "../fetch/Fetch";
 import Search from "../search/Search";
 import Debouncing from "../debouncing/Debouncing";
+import Filems from "../filems/Filems";
 
 const Tab = ({ tabData, activeTab, setActiveTab }) => {
   const TabData = () => {
@@ -18,6 +19,8 @@ const Tab = ({ tabData, activeTab, setActiveTab }) => {
         return <Search />;
       case "Debouncing":
         return <Debouncing />;
+      case "Filems":
+        return <Filems />;
       default:
         return null;
     }
