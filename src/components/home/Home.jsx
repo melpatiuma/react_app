@@ -9,6 +9,7 @@ const Home = () => {
     { id: 3, value: "Fetch" },
     { id: 4, value: "Search" },
     { id: 5, value: "Debouncing" },
+    { id: 6, value: "Filems" },
   ];
   return (
     <>

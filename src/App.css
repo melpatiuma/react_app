@@ -91,3 +91,54 @@
   text-decoration: line-through;
   color: #6b7280;
 }
+
+/* Container to handle horizontal scrolling on small screens */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+/* Base table configuration */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse; /* Merges cell borders into a clean single line */
+  table-layout: fixed; /* Ensures predictable column widths */
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden; /* Required to keep rounded corners visible */
+}
+
+/* Header Styling */
+.styled-table th {
+  background-color: #009879;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left; /* Aligns text; switch to 'center' if preferred */
+  padding: 12px 15px;
+}
+
+/* Body Cell Styling */
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dddddd;
+  color: #333333;
+}
+
+/* Zebra Striping: Background color for every alternate row */
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+/* Hover effect: Highlights the active row */
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Highlights the very last row border beautifully */
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
